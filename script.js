@@ -20,7 +20,7 @@ chatForm.addEventListener("submit", async (e) => {
 
   try {
     // Send user input to your Cloudflare Worker API
-    const response = await fetch("https://your-cloudflare-worker-url.workers.dev", {
+    const response = await fetch("https://dawn-glitter-d08a.mariposa06017.workers.dev", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt: message }),
