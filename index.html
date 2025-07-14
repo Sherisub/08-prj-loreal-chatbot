@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L’Oréal Smart Product Advisor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!------- Header / Branding ------->
+      <header class="site-header">
+        <img src="https://commons.wikimedia.org/wiki/File:L%27Or%C3%A9al_logo.svg" alt="L'Oréal Logo" class="logo" />
+        <h1 class="site-title">Smart Product Advisor</h1>
+      </header>
+
+      <!------- Chat Area ------->
+      <main>
+        <section class="chatbox">
+          <div id="chatWindow" class="chat-window" aria-live="polite">
+            <!-- Chat messages will appear here -->
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <input
+              id="userInput"
+              name="userInput"
+              type="text"
+              placeholder="Ask me about L’Oréal products or skincare..."
+              autocomplete="off"
+              required
+            />
+            <button type="submit" id="sendBtn">
+              <span class="material-icons">send</span>
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <!------- Footer Links ------->
+      <footer class="site-footer">
+        <p>&copy; 2025 L’Oréal. All rights reserved.</p>
+        <nav>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact</a>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- Secrets.js only used for local dev. Omit in production -->
+    <script src="script.js"></script>
+  </body>
+</html>
